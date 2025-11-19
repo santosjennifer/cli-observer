@@ -1,4 +1,7 @@
-# dx-observe
+![Last Commit](https://img.shields.io/github/last-commit/santosjennifer/cli-observer)
+[![Continuous Integration with Github](https://github.com/santosjennifer/cli-observer/actions/workflows/ci.yml/badge.svg)](https://github.com/santosjennifer/cli-observer/actions/workflows/ci.yml)
+
+# CLI para observabilidade
 
 **dx-observe** é uma CLI escrita em Python focada em **observabilidade local**, permitindo analisar, filtrar e visualizar arquivos de log no formato **JSONL**.
 
