@@ -1,0 +1,20 @@
+{"timestamp":"2025-01-01T10:00:00Z","level":"INFO","message":"Process started","service":"checkout-api","hostname":"node-01"}
+{"timestamp":"2025-01-01T10:00:01Z","level":"ERROR","message":"Connection failed","service":"checkout-api","error_type":"TimeoutError","retry_count":1,"ip":"10.0.0.21"}
+{"timestamp":"2025-01-01T10:00:02Z","level":"INFO","message":"Retrying connection","service":"checkout-api","retry_count":2,"request_id":"req-91a2f"}
+{"timestamp":"2025-01-01T10:00:03Z","level":"WARN","message":"Slow response detected","service":"checkout-api","duration_ms":842,"endpoint":"/v1/payments"}
+{"timestamp":"2025-01-01T10:00:04Z","level":"INFO","message":"Connection established","service":"checkout-api","hostname":"node-01","ip":"10.0.0.21"}
+{"timestamp":"2025-01-01T10:00:05Z","level":"INFO","message":"Fetching configuration","service":"config-service","request_id":"req-17bb9","payload_size":120}
+{"timestamp":"2025-01-01T10:00:06Z","level":"ERROR","message":"Configuration service unavailable","service":"config-service","status_code":503,"error_type":"ServiceUnavailable"}
+{"timestamp":"2025-01-01T10:00:07Z","level":"INFO","message":"Fallback to cache","service":"checkout-api","cache_version":"v3.4","duration_ms":42}
+{"timestamp":"2025-01-01T10:00:08Z","level":"INFO","message":"Cache loaded","service":"checkout-api","cache_items":34}
+{"timestamp":"2025-01-01T10:00:09Z","level":"INFO","message":"Starting workflow","service":"workflow-engine","trace_id":"trc-44fbc","span_id":"spn-001"}
+{"timestamp":"2025-01-01T10:00:10Z","level":"INFO","message":"Step 1 completed","service":"workflow-engine","duration_ms":133}
+{"timestamp":"2025-01-01T10:00:11Z","level":"WARN","message":"High API latency","service":"remote-api","endpoint":"/v1/calc","duration_ms":1250}
+{"timestamp":"2025-01-01T10:00:12Z","level":"INFO","message":"Step 2 completed","service":"workflow-engine","duration_ms":215}
+{"timestamp":"2025-01-01T10:00:13Z","level":"ERROR","message":"Data parsing failed","service":"parser-service","error_type":"JsonDecodeError","details":"Invalid token at line 4"}
+{"timestamp":"2025-01-01T10:00:14Z","level":"INFO","message":"Attempting recovery","service":"parser-service","retry_count":1}
+{"timestamp":"2025-01-01T10:00:15Z","level":"INFO","message":"Recovery successful","service":"parser-service","duration_ms":78}
+{"timestamp":"2025-01-01T10:00:16Z","level":"INFO","message":"Step 3 completed","service":"workflow-engine","duration_ms":190}
+{"timestamp":"2025-01-01T10:00:17Z","level":"INFO","message":"Workflow finished","service":"workflow-engine","status":"success"}
+{"timestamp":"2025-01-01T10:00:18Z","level":"INFO","message":"Summary generated","service":"report-service","file":"summary_20250101.json"}
+{"timestamp":"2025-01-01T10:00:19Z","level":"INFO","message":"Process finished","service":"checkout-api","hostname":"node-01"}
